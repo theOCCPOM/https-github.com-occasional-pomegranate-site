@@ -1,201 +1,166 @@
-export default function OccasionalPomegranateHomepage() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-pink-50 text-stone-800">
-      <header className="sticky top-0 z-20 border-b border-rose-100/80 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="The Occasional Pomegranate logo" className="h-12 w-auto" />
-            <div>
-              <p className="text-lg font-semibold tracking-wide text-stone-900">the occasional pomegranate</p>
-              <p className="text-xs uppercase tracking-[0.22em] text-rose-500">bespoke organization for private residences</p>
-            </div>
-          </div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Occasional Pomegranate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <nav className="hidden gap-8 text-sm text-stone-600 md:flex">
-            <a href="#services" className="transition hover:text-rose-700">Services</a>
-            <a href="#spaces" className="transition hover:text-rose-700">Signature Spaces</a>
-            <a href="#approach" className="transition hover:text-rose-700">Approach</a>
-            <a href="#about" className="transition hover:text-rose-700">About</a>
-            <a href="#contact" className="transition hover:text-rose-700">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(244,114,182,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(136,19,55,0.12),_transparent_30%)]" />
-
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-10 lg:py-28">
-          <div className="max-w-xl">
-            <div className="mb-6 inline-flex items-center rounded-full border border-rose-200 bg-white/80 px-4 py-2 text-xs uppercase tracking-[0.24em] text-rose-700 shadow-sm">
-              Private estate organization & household systems
-            </div>
-
-            <h1 className="text-5xl font-semibold leading-tight tracking-tight text-stone-900 md:text-6xl">
-              Bespoke estate support and home organization
-            </h1>
-
-            <p className="mt-6 text-lg leading-8 text-stone-600">
-              The Occasional Pomegranate provides discreet, highly personalized
-              organization and estate support for beautifully run homes. From
-              closets and pantries to archives, garages, and household systems,
-              each space is approached with care, clarity, and respect for the
-              way you live.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Button className="rounded-2xl bg-rose-700 px-6 py-6 text-sm hover:bg-rose-800">
-                Request Consultation
-              </Button>
-
-              <Button
-                variant="outline"
-                className="rounded-2xl border-rose-200 px-6 py-6 text-sm text-rose-700 hover:bg-rose-50"
-              >
-                View Services
-              </Button>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <img src="/logo.png" alt="Pomegranate emblem" className="w-[260px] opacity-90" />
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-        <h2 className="mb-14 text-center text-3xl font-semibold text-stone-900">Services</h2>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          <Card className="rounded-2xl border-rose-100 shadow-sm">
-            <CardContent className="p-8">
-              <h3 className="mb-4 text-xl font-semibold">Closet Systems</h3>
-              <p className="text-sm leading-7 text-stone-600">
-                Dressing rooms, wardrobes, and everyday storage thoughtfully
-                edited and arranged into elegant systems that simplify daily life.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="rounded-2xl border-rose-100 shadow-sm">
-            <CardContent className="p-8">
-              <h3 className="mb-4 text-xl font-semibold">Pantry & Kitchen Organization</h3>
-              <p className="text-sm leading-7 text-stone-600">
-                Functional, beautiful pantry and kitchen systems designed for
-                clarity, ease, and a calm household rhythm.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="rounded-2xl border-rose-100 shadow-sm">
-            <CardContent className="p-8">
-              <h3 className="mb-4 text-xl font-semibold">Garage & Storage Systems</h3>
-              <p className="text-sm leading-7 text-stone-600">
-                Meticulously arranged storage walls, shelving systems, and
-                labeled environments that bring order to complex spaces.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      <section id="spaces" className="bg-white/70 py-24 text-center backdrop-blur">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="mb-6 text-3xl font-semibold text-stone-900">Signature Spaces</h2>
-          <p className="mx-auto mb-12 max-w-2xl text-lg leading-8 text-stone-600">
-            Thoughtful systems for the spaces that most shape daily life in a home.
-          </p>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Closets & Dressing Rooms",
-              "Pantries & Kitchen Systems",
-              "Garage Storage Walls",
-              "Family Archives",
-              "Household Storage Systems",
-              "Seasonal Home Resets",
-            ].map((item) => (
-              <div key={item} className="rounded-2xl border border-rose-100 bg-white px-6 py-5 text-sm text-stone-700 shadow-sm">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="approach" className="py-24 text-center">
-        <div className="mx-auto max-w-3xl px-6">
-          <h2 className="mb-6 text-3xl font-semibold">Our Approach</h2>
-
-          <p className="text-lg leading-8 text-stone-600">
-            Every home has its own rhythm. Our work focuses on creating elegant,
-            intuitive systems that feel calm, beautiful, and easy to maintain —
-            with discretion, warmth, and attention to detail throughout.
-          </p>
-        </div>
-      </section>
-
-      <section id="about" className="mx-auto max-w-6xl px-6 py-24 text-center">
-        <h2 className="mb-6 text-3xl font-semibold text-stone-900">About</h2>
-
-        <p className="mx-auto max-w-2xl text-lg leading-8 text-stone-600">
-          Founded by Kirsten Blake, The Occasional Pomegranate provides
-          discreet estate support and refined home organization for private
-          residences. With a background in hospitality and estate management,
-          Kirsten brings a calm, highly organized presence to complex homes
-          and households.
-        </p>
-      </section>
-
-      <section id="contact" className="bg-rose-50 py-24">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="mb-6 text-3xl font-semibold text-stone-900">Contact</h2>
-
-          <p className="mb-2 text-stone-600">Serving Private Residences in</p>
-          <p className="mb-4 text-lg text-stone-700">Jupiter | Palm Beach | Miami</p>
-
-          <p className="mb-10 text-sm text-stone-500">www.theoccasionalpomegranate.com</p>
-
-          <div className="mx-auto grid max-w-2xl gap-4 rounded-[28px] border border-rose-100 bg-white p-6 text-left shadow-sm">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <label className="mb-2 block text-sm text-stone-600">Name</label>
-                <input className="w-full rounded-xl border border-rose-100 px-4 py-3 outline-none focus:border-rose-300" placeholder="Your name" />
-              </div>
-              <div>
-                <label className="mb-2 block text-sm text-stone-600">Email</label>
-                <input className="w-full rounded-xl border border-rose-100 px-4 py-3 outline-none focus:border-rose-300" placeholder="you@example.com" />
-              </div>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <label className="mb-2 block text-sm text-stone-600">City</label>
-                <input className="w-full rounded-xl border border-rose-100 px-4 py-3 outline-none focus:border-rose-300" placeholder="Palm Beach" />
-              </div>
-              <div>
-                <label className="mb-2 block text-sm text-stone-600">Project Type</label>
-                <input className="w-full rounded-xl border border-rose-100 px-4 py-3 outline-none focus:border-rose-300" placeholder="Closet, pantry, garage..." />
-              </div>
-            </div>
-
-            <div>
-              <label className="mb-2 block text-sm text-stone-600">Message</label>
-              <textarea className="min-h-[140px] w-full rounded-xl border border-rose-100 px-4 py-3 outline-none focus:border-rose-300" placeholder="Tell us a little about your space or project." />
-            </div>
-
-            <div className="flex flex-col items-center justify-between gap-4 pt-2 md:flex-row">
-              <p className="text-sm text-stone-500">hello@theoccasionalpomegranate.com</p>
-              <Button className="rounded-2xl bg-rose-700 px-8 py-6 hover:bg-rose-800">
-                Send Inquiry
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-rose-100 py-10 text-center text-sm text-stone-500">
-        © {new Date().getFullYear()} The Occasional Pomegranate • www.theoccasionalpomegranate.com
-      </footer>
-    </div>
-  );
+<style>
+body{
+font-family: Georgia, serif;
+margin:0;
+background:#fff6f8;
+color:#333;
 }
+
+header{
+padding:30px;
+text-align:center;
+background:white;
+}
+
+nav a{
+margin:0 10px;
+color:#8B1E3F;
+text-decoration:none;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+h1{
+font-size:44px;
+}
+
+.services{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+button{
+background:#8B1E3F;
+color:white;
+border:none;
+padding:14px 24px;
+border-radius:10px;
+font-size:16px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:white;
+margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>the occasional pomegranate</h2>
+<p>bespoke organization for private residences</p>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#spaces">Signature Spaces</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section>
+
+<h1>Bespoke estate support and home organization</h1>
+
+<p>
+The Occasional Pomegranate provides discreet, highly personalized organization
+and estate support for beautifully run homes. From closets and pantries to
+archives, garages, and household systems, each space is approached with care,
+clarity, and respect for the way you live.
+</p>
+
+<button>Request Consultation</button>
+
+</section>
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Closet Systems</h3>
+<p>Dressing rooms, wardrobes, and everyday storage thoughtfully arranged into elegant systems.</p>
+</div>
+
+<div class="card">
+<h3>Pantry & Kitchen Organization</h3>
+<p>Beautiful pantry and kitchen systems designed for clarity and ease.</p>
+</div>
+
+<div class="card">
+<h3>Garage & Storage Systems</h3>
+<p>Meticulously arranged storage walls and shelving systems.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="spaces">
+
+<h2>Signature Spaces</h2>
+
+<p>
+Closets & Dressing Rooms • Pantries & Kitchen Systems • Garage Storage Walls
+</p>
+
+<p>
+Family Archives • Household Storage Systems • Seasonal Home Resets
+</p>
+
+</section>
+
+<section id="about">
+
+<h2>About</h2>
+
+<p>
+Founded by Kirsten Blake, The Occasional Pomegranate provides discreet estate
+support and refined home organization for private residences.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p><strong>Serving Private Residences in</strong></p>
+
+<p>Jupiter | Palm Beach | Miami</p>
+
+<p>hello@theoccasionalpomegranate.com</p>
+
+</section>
+
+<footer>
+
+© 2026 The Occasional Pomegranate
+
+</footer>
+
+</body>
+</html>
